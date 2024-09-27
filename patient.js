@@ -31,6 +31,8 @@ let patient1 = new Patient("Joseph Boateng", 28, "Male", 84, 1.8);
 let patient2 = new Patient("Victoria Boateng", 25, "Female", 60, 1.6);
 let patient3 = new Patient("Kofi Boateng", 20, "Male", 70, 1.7);
 let patient4 = new Patient("Kwame Boateng", 22, "Male", 75, 1.8);
+let patient5 = new Patient("Kwaku Boateng", 24, "Male", 75, 1.8);
+let patient6 = new Patient("Efua Boateng", 20, "female", 70, 1.7);
 
 // Lets add a diagnosis to the patient profile
 patient1.add_diagnosis("Hyperstension");
@@ -39,6 +41,8 @@ patient2.add_diagnosis("Diabetes");
 patient2.add_diagnosis("Hypotension");
 patient3.add_diagnosis("Hypotension");
 patient4.add_diagnosis("Hypotension");
+patient5.add_diagnosis("Hypotension");
+patient6.add_diagnosis("Hypotension");
 
 // Lets add a medication to the patient profile
 patient1.add_medication("Aspirin");
@@ -47,27 +51,37 @@ patient2.add_medication("Metformin");
 patient2.add_medication("glimetrazone");
 patient3.add_medication("glimetrazone");
 patient4.add_medication("glimetrazone");
+patient5.add_medication("glimetrazone");
+patient6.add_medication("glimetrazone");
 
 // Lets add an appointment to the patient profile
 patient1.add_appointment("10/10/2024");
 patient2.add_appointment("10/11/2024");
 patient3.add_appointment("10/12/2024");
 patient4.add_appointment("10/13/2024");
+patient5.add_appointment("10/14/2024");
+patient6.add_appointment("10/15/2024");
 
 // Lets update the patient profile
 patient1.update_status("Critical");
 patient2.update_status("Stable");
 patient3.update_status("Critical");
 patient4.update_status("Stable");
+patient5.update_status("Critical");
+patient6.update_status("Stable");
 
 // Lets acceess the patient information
 console.log(patient1);
 console.log(patient2);
 console.log(patient3);
 console.log(patient4);
+console.log(patient5);
+console.log(patient6);
 
 console.log("Patient Name: " + patient1.name);
 console.log("Patient condition: " + patient1.current_status);
 console.log("Patient Diagnoses: " + patient2.diagnoses);
 console.log("Patient Medications: " + patient3.medications);
 console.log("Patient Appointments: " + patient4.appointments);
+console.log("Patient Age: " + patient5.age);
+console.log("Patient Gender: " + patient6.gender);
